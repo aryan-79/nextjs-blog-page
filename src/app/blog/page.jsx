@@ -8,7 +8,7 @@ export const metadata = {
 
 // fetch data with an API
 const getData = async () => {
-  const res = await fetch("http://localhost:3000/api/blog", {
+  const res = await fetch("https://nextjs-blog-page-two.vercel.app//api/blog", {
     next: { revalidate: 2000 },
   });
   if (!res.ok) {
