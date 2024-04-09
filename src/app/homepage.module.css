@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    gap: 80px;
+}
+.textContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.title{
+    font-size: 80px;
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+.button{
+    padding: 20px;
+    min-width: 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button:first-child{
+    background-color: var(--btn);
+    color: var(--text)
+}
+.imgContainer{
+    flex:1;
+    position: relative;
+}
+.brands{
+    width: 480px;
+    height: 40px;
+    position: relative;
+    filter: grayscale(100%);
+}
+
+@media (max-width: 768px) {
+    .textContainer{
+        align-items: center;
+    }
+    .title {
+        font-size: 54px;
+    }
+    .brands{
+        width: 100%;
+    }
+    .imgContainer{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+    }
+  }
